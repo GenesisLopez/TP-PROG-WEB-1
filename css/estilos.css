@@ -8,3 +8,23 @@ h1{
 img{
     width: 100px;
 }
+#logos{
+    width: 100px;
+}
+footer{
+    background-color: #896755;
+    color: white;
+    text-align: center;
+    font-style: italic;
+    margin-top: 10px;
+    padding: 10px;
+    border-top: 3px solid #624435;
+}
+.contenedor{
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
