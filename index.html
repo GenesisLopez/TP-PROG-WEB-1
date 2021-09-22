@@ -4,9 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
+    <header>
+        <section>
+            <h1>Instituto de Idiomas</h1>
+            <div id="logo-principal">
+                <img src="img/logo-idiomasvivo.png" alt="logo del establecimiento">
+            </div>
+               
+          
+            
+        </section>
+       
+        <nav >
+            <ul class="menu">
+                <li><a href="index.html" target="_blank">Home</a></li>
+                <li><a href="establecimientos.html" target="_blank">Establecimientos</a></li>
+                <li><a href="inscripcion.html" target="_blank">Inscripcion</a></li>
+                <li><a href="calendario.html" target="_blank">Calendario</a></li>
+                <li><a href="contacto.html" target="_blank">Contacto</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <br><br>
+        <h2>Instituto de idiomas</h2>
+        <section class="contenedor">
+            
+            <br><br>
+            <article>
+                <img class="logos" src="img/img-establecimiento.jpg" alt="imagen de establecimientos">
+                <form action="#"method= "GET">
+                    <label for="establecimiento"></label>
+                    <select name="establecimiento" id="establecimiento">
+                        <option value="">Seleccione un establecimiento</option>
+                        <option value="1">Belgrano</option>
+                        <option value="2">Ramos Mejia</option>
+                        <option value="3">Caballito</option>
+                        <option value="4">San Justo</option>
+                    </select>
+                </form>
+
+            </article>
+            <article>
+                <img class="logos" src="img/logo-idiomas.jpg" alt="logo cursos">
+                <form action="#" method="GET">
+                    <label for="cursos" id="cursos"></label>
+                    <select name="cursos" id="cursos">
+                        <option  value="1">Ingles</option>
+                        <option value="2">Frances</option>
+                        <option value="3">Aleman</option>
+                        <option value="4">Italiano</option>
+
+                    </select>
+                </form>
+            </article>
+            <article>
+                <img class="logos" src="img/logo-inscripcion.jpg" alt="inscripcion">
+                <input type="submit" value="inscripcion">
+            </article>
+          
+
+        </section>
+        <section>
+            <h2>Establecimientos</h2>
+        </section>
+
+    </main>
+    <footer>
+        <h4>Datos del grupo</h4>
+
+    </footer>
     
 </body>
 </html>
