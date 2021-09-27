@@ -170,5 +170,29 @@ input[type=number] {
 }
 .center {
     text-align: center
+    }
+p {text-align: center;}
+.camposdiv {
+    float:  left;
+    clear:  none; 
 }
-
+.camposizquierda{
+    float:  left;
+    clear:  none; 
+    width: 45%;
+   padding-left: 50px;
+   display: inline;
+}
+.camposderecha{
+    float:  left;
+    clear:  none; 
+    width: 45%;
+    padding-left: 50px;
+    display: inline;
+}
+input, label {
+    display:block;
+}
+button{
+    float: right;
+}
