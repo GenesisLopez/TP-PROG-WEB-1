@@ -165,9 +165,7 @@ input::-webkit-inner-spin-button {
     margin: 0; 
 }
 
-input[type=number] {
-    -moz-appearance:textfield; 
-}
+
 .center {
     text-align: center
     }
@@ -180,8 +178,10 @@ p {text-align: center;}
     float:  left;
     clear:  none; 
     width: 45%;
-   padding-left: 50px;
-   display: inline;
+     padding-left: 50px;
+     display: inline;
+    border: none;
+    
 }
 .camposderecha{
     float:  left;
@@ -195,4 +195,25 @@ input, label {
 }
 button{
     float: right;
+    background-color: #555555;
+    color: white;
 }
+input[type=text] {
+    border: none;
+    border-bottom: 2px solid black;
+    
+  }
+  input[type=number] {
+    border: none;
+    border-bottom: 2px solid black;
+    -moz-appearance:textfield;
+    width: 97%;
+    
+    
+
+  }
+  input[type=email] {
+    border: none;
+    border-bottom: 2px solid black;
+   
+  }
