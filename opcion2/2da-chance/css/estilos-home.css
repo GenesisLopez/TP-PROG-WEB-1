@@ -6,16 +6,33 @@
     background-size: cover;
     opacity:  0.8;
 }
-.mini-inscripcion-logo{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-color: red;
-}
-.mini-inscripcion {
-    display: flex;
-    flex-wrap: wrap ;
+.baner-cursos article{
+  display: inline-block;
    
-    text-align: center;
-    width: 70%;
+
+}
+.cuadritos{
+    width: 300px;
+    margin: 5px;
+    height: 300px;
+    border-style: double;
+    background-color: blue;
+    position: relative;
+}
+.cuadritos h3{
+    color: #fff;
+    background-color: black;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    padding: 5px;
+
+}
+.cuadritos p{
+    position: absolute;
+    bottom: 5%;
+    background-color: cornsilk;
+    margin: 3px;
+    padding: 2px;
+
 }
