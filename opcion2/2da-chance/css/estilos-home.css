@@ -65,4 +65,22 @@
     background-size: contain;
     background-position: center;
 }
-
+.banerimg{
+    
+    display: inline-block;
+    width: 100%;  
+    display: inline-flex;
+    text-align: center;
+}
+.banerchild{
+    width: 25%;
+    position: relative;
+}
+.banerchild span{
+    position: absolute;
+    right: 60px;
+    top: 5px;
+    background-color:white;
+    
+    
+}
