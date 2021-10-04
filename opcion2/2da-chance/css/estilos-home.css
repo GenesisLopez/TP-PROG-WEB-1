@@ -11,11 +11,16 @@
    
 
 }
+.baner-cursos h2{
+    font-size: 40px;
+    text-align: center;
+    margin: 1em;
+}
 .cuadritos{
     width: 300px;
     margin: 5px;
     height: 300px;
-    border-style: double;
+    border-radius: 10%;
     background-color: blue;
     position: relative;
 }
@@ -24,7 +29,7 @@
     background-color: black;
     position: absolute;
     right: 0;
-    top: 5px;
+    top: 25px;
     padding: 5px;
 
 }
@@ -36,3 +41,28 @@
     padding: 2px;
 
 }
+#ingles{
+    background-image: url(../img/eeuu-1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+#portugal{
+    background-image: url(../img/portugal.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+#aleman{
+    background-image: url(../img/aleman.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+#coreano{
+    background-image: url(../img/corea.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
