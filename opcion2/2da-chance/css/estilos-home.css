@@ -6,16 +6,81 @@
     background-size: cover;
     opacity:  0.8;
 }
-.mini-inscripcion-logo{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-color: red;
-}
-.mini-inscripcion {
-    display: flex;
-    flex-wrap: wrap ;
+.baner-cursos article{
+  display: inline-block;
    
+
+}
+.baner-cursos h2{
+    font-size: 40px;
     text-align: center;
-    width: 70%;
+    margin: 1em;
+}
+.cuadritos{
+    width: 300px;
+    margin: 5px;
+    height: 300px;
+    border-radius: 10%;
+    background-color: blue;
+    position: relative;
+}
+.cuadritos h3{
+    color: #fff;
+    background-color: black;
+    position: absolute;
+    right: 0;
+    top: 25px;
+    padding: 5px;
+
+}
+.cuadritos p{
+    position: absolute;
+    bottom: 5%;
+    background-color: cornsilk;
+    margin: 3px;
+    padding: 2px;
+
+}
+#ingles{
+    background-image: url(../img/eeuu-1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+#portugal{
+    background-image: url(../img/portugal.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+#aleman{
+    background-image: url(../img/aleman.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+#coreano{
+    background-image: url(../img/corea.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.banerimg{
+    
+    display: inline-block;
+    width: 100%;  
+    display: inline-flex;
+    text-align: center;
+}
+.banerchild{
+    width: 25%;
+    position: relative;
+}
+.banerchild span{
+    position: absolute;
+    right: 60px;
+    top: 5px;
+    background-color:white;
+    
+    
 }
