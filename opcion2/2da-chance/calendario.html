@@ -1,76 +1,179 @@
 <!DOCTYPE html>
-<html lang="estilos">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <title>Calendario</title>
+    <link rel="stylesheet" href="css/estilos-calendario.css">
+    
 </head>
+
 <body>
     <header>
-        
-        <div class="principal">
-            <h1 id="titulo-principal"> Instituto</h1>
-           <a  href="https://www.instagram.com/?hl=es"><div class="logos-redes-sociales-insta"></div></a>
-            <a href="https://es-la.facebook.com/" ><div class="logos-redes-sociales-face"></div></a>
-        </div>
-        <nav class="contenedor">
-            <article >
-                <ul class="item1">
-                    <li class="banderas"><img src="img/aleman.jpg" alt="aleman"></li>
-                    <li class="banderas"> <img src="img/eeuu-1.jpg" alt="Ingles"></li>
-                    <li class="banderas"><img src="img/portugal.jpg" alt="portugues"></li>
-                    <li class="banderas"><img src="img/teas-2.jpg" alt="portugues"></li>
-                    <li class="banderas"><img src="img/corea.jpg" alt="coreano"></li>
-                    <li class="banderas"><img src="img/espana.jpg" alt="espanol"></li>
-                </ul>
-            </article>
-            <article >
-				<ul class="item1", class="menu">
-                    <li><a href="index.html" target="_blank">Home</a></li>
-                    <li><a href="contacto.html" target="_blank">Contacto</a></li>
-                    <li><a href="nosotros.html" target="_blank">Nosotros</a></li>
-                    <li><a href="sedes.html" target="_blank">Sedes</a></li>
-                    <li><a href="inscripciom.html" target="_blank">Incripcion</a></li>
-                </ul>
-				</article>
+        <section>
+            <h1>INSTITUTO DE IDIOMAS</h1>
+            <div id="logo-principal">
+                <img src="img/logo-idiomasvivo.png" alt="logo del establecimiento">
+            </div>
 
-        </nav>
-
-    </header>
-    <main>
-
-    </main>
-    <footer >
-        <article>
-            <h4 class="titulo-inferior">Participante</h4>
-            <ul class="participantes">
-                <li>primero</li>
-                <li>segundo</li>
-                <li>tercero</li>
-                <li>cuarto</li>
-
-            </ul>
-        </article>
-        <article>
-            <h4 class="titulo-inferior">Menu inferior</h4>
-            <ul class="menu-inferior">
+        </section>
+       
+        <nav >
+            <ul class="menu">
                 <li><a href="index.html" target="_blank">Home</a></li>
+                <li><a href="establecimientos.html" target="_blank">Establecimientos</a></li>
+                <li><a href="inscripcion.html" target="_blank">Inscripcion</a></li>
+                <li><a href="calendario.html" target="_blank">Calendario</a></li>
                 <li><a href="contacto.html" target="_blank">Contacto</a></li>
-                <li><a href="calendario.html" target="_blank">Caendario</a></li>
-                <li><a href="sedes.html" target="_blank">Sedes</a></li>
-                <li><a href="inscripciom.html" target="_blank">Incripcion</a></li>
-            
+                
             </ul>
-        </article>
-        <article >
-            <h4 class="titulo-inferior">Redes sociales</h4>
-            <div class="redes-inferior">
-            <a href="https://www.instagram.com/?hl=es"><div class="logos-redes-sociales-insta"></div></a>
-            <a href="https://es-la.facebook.com/" ><div class="logos-redes-sociales-face"></div></a>
-        </div>
-        </article>
+        </nav>
+    </header>
+    <main class="calendario">
+
+        <h1>CALENDARIO DE CURSOS</h1>
+        <form class="filtro" action="#">
+            <label for="">Filtrar por </label>
+            <datalist id="informacion1">
+                <option value="Belgrano">
+                <option value="Ramos Mejia">
+                <option value="Caballito">
+                <option value="San Justo">
+            </datalist>
+
+            <datalist id="informacion2">
+                <option value="Ingles">
+                <option value="Frances">
+                <option value="Aleman">
+                <option value="Italiano">
+            </datalist>
+            
+            <input type="text" list="informacion1" placeholder="Establecimiento">
+            <input type="text" list="informacion2" placeholder="Idioma">
+        </form>
+
+        <h2>Mes 1</h2>
+        <div class="dios">
+
+        <section class="cuerpo">
+
+            <article class="primeraEntrada">
+                <div class="div1">
+                    <img src="img/descarga.jfif" alt="">
+                    <div>
+                    <h6>IDIOMA-NIVEL</h6>
+                    <p>Modalidad:</p>
+                    <p>Dias y horarios:</p>
+                    <p>Fecha de inicio:</p>
+                    <p>Sede:</p>
+                    <a href="inscripcion.html"><input type="button" value="Inscripcion"></a>
+                </div>
+            </div>
+                <div class="div1">
+                    <img src="img/descarga.jfif" alt="">
+               <div>
+                    <h6>IDIOMA-NIVEL</h6>
+                    <p>Modalidad:</p>
+                    <p>Dias y horarios:</p>
+                    <p>Fecha de inicio:</p>
+                    <p>Sede:</p>
+                    <a href="inscripcion.html"><input type="button" value="Inscripcion"></a>
+                </div>
+            </article>
+
+        </section>
+
+        <section class="cuerpo">
+
+            <article class="primeraEntrada">
+                <div class="div1">
+                    <img src="img/descarga.jfif" alt="">
+                    <div>
+                    <h6>IDIOMA-NIVEL</h6>
+                    <p>Modalidad:</p>
+                    <p>Dias y horarios:</p>
+                    <p>Fecha de inicio:</p>
+                    <p>Sede:</p>
+                    <a href="inscripcion.html"><input type="button" value="Inscripcion"></a>
+                </div>
+            </div>
+                <div class="div1">
+                    <img src="img/descarga.jfif" alt="">
+               <div>
+                    <h6>IDIOMA-NIVEL</h6>
+                    <p>Modalidad:</p>
+                    <p>Dias y horarios:</p>
+                    <p>Fecha de inicio:</p>
+                    <p>Sede:</p>
+                    <a href="inscripcion.html"><input type="button" value="Inscripcion"></a>
+                </div>
+            </article>
+
+        </section>
+    </div>
+    <h2>Mes 2</h2>
+    <div class="dios">
+
+        <section class="cuerpo">
+
+            <article class="primeraEntrada">
+                <div class="div1">
+                    <img src="img/descarga.jfif" alt="">
+                    <div>
+                    <h6>IDIOMA-NIVEL</h6>
+                    <p>Modalidad:</p>
+                    <p>Dias y horarios:</p>
+                    <p>Fecha de inicio:</p>
+                    <p>Sede:</p>
+                    <a href="inscripcion.html"><input type="button" value="Inscripcion"></a>
+                </div>
+            </div>
+                <div class="div1">
+                    <img src="img/descarga.jfif" alt="">
+               <div>
+                    <h6>IDIOMA-NIVEL</h6>
+                    <p>Modalidad:</p>
+                    <p>Dias y horarios:</p>
+                    <p>Fecha de inicio:</p>
+                    <p>Sede:</p>
+                    <a href="inscripcion.html"><input type="button" value="Inscripcion"></a>
+                </div>
+            </article>
+
+        </section>
+
+        <section class="cuerpo">
+
+            <article class="primeraEntrada">
+                <div class="div1">
+                    <img src="img/descarga.jfif" alt="">
+                    <div>
+                    <h6>IDIOMA-NIVEL</h6>
+                    <p>Modalidad:</p>
+                    <p>Dias y horarios:</p>
+                    <p>Fecha de inicio:</p>
+                    <p>Sede:</p>
+                    <a href="inscripcion.html"><input type="button" value="Inscripcion"></a>
+                </div>
+            </div>
+                <div class="div1">
+                    <img src="img/descarga.jfif" alt="">
+               <div>
+                    <h6>IDIOMA-NIVEL</h6>
+                    <p>Modalidad:</p>
+                    <p>Dias y horarios:</p>
+                    <p>Fecha de inicio:</p>
+                    <p>Sede:</p>
+                    <a href="inscripcion.html"><input type="button" value="Inscripcion"></a>
+                </div>
+            </article>
+
+        </section>
+    </div>
+    </main>
+    <footer>
+        <h4>Datos del grupo</h4>
     </footer>
 </body>
 </html>
