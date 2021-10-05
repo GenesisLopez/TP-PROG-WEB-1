@@ -25,7 +25,6 @@ body{
 }
 h1{
     text-align: center;
-   
 }
 
 header{
@@ -65,10 +64,7 @@ footer{
     
 }
 .principal h1{
-    
     color: white;
-    
-
 }
 .principal a{
     display: inline-block;
@@ -145,19 +141,12 @@ nav{
     display: flex;
     flex-direction: row ;
     width: 40%;
-   
-    
-   
     list-style-type: none;
     margin: 0 auto;
 }
-.item1 ul li{
-    
-    
-    list-style: none;
-    
+.item1 ul li{ 
+    list-style: none;  
 }
-
 
 .banderas{
     margin-right: 30px;
