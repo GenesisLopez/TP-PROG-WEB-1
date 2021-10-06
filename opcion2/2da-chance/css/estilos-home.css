@@ -6,10 +6,18 @@
     background-size: cover;
     opacity:  0.8;
 }
-.baner-cursos article{
-  display: inline-block;
-   
+.baner-cursos{
 
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+.baner-cursos article{
+  
+    width: 20%;  
+    display: inline-flex;
+    text-align: center;
+    
 }
 .baner-cursos h2{
     font-size: 40px;
