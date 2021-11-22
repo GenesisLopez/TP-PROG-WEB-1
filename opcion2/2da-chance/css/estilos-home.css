@@ -1,16 +1,22 @@
 .carrusel{
     width: 100%;
-    height: 500px;
+    height: 31.25em;
     background-image: url(../img/img03.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     opacity:  0.8;
 }
+img{
+    max-width: 100%;
+    height: auto;
+    }
 .baner-cursos{
 
     width: 100%;
     display: inline-block;
     text-align: center;
+    display: calc(45%);
+
 }
 .baner-cursos article{
   
@@ -20,15 +26,15 @@
     
 }
 .baner-cursos h2{
-    font-size: 40px;
+    font-size: 2.5em;
     text-align: center;
     margin: 1em;
     
 }
 .cuadritos{
-    width: 300px;
-    margin: 5px;
-    height: 230px;
+    width: 18.75em;
+    margin: 0.3em;
+    height: 14.37em;
     border-radius: 15%;
     background-color: rgb(250, 223, 223);
     position: relative;
@@ -38,16 +44,16 @@
     background-color: black;
     position: absolute;
     right: 0;
-    top: 25px;
-    padding: 5px;
+    top: 1.55em;
+    padding: 0.3em;
 
 }
 .cuadritos p{
     position: absolute;
     bottom: 5%;
     background-color: cornsilk;
-    margin: 3px;
-    padding: 2px;
+    margin: 0.2em;
+    padding: 0.15em;
 
 }
 .cuadritos a{
@@ -81,25 +87,29 @@
 }
 .banerimg{
     
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     width: 100%;  
     display: inline-flex;
     text-align: center;
 }
 .banerchild{
     width: 25%;
-    position: relative;
+   
+    width: calc(25% - 2em);
+   
 }
 .banerchild span{
     position: absolute;
-    right: 60px;
-    top: 5px;
+    right: 3.75em;
+    top: 0.3em;
     background-color:white;
     
 }
 
 .mini-inscripcion form{
-   margin-top: 30px;
+   margin-top: 1.8em;
    text-align: center;
   font-size: larger;
  
@@ -113,3 +123,44 @@
     border-radius: 10% ;
     box-sizing: content-box;
 }
+.mapa-sede{
+    width: 100%;
+    height: 9.37em;
+
+    
+}
+@media screen and (max-width:60em){
+    body{
+    font-size: 90%;
+
+    }
+  
+   .cuadros{
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+   }
+   .cuadros .cuadritos{
+    width: calc(50% - 2em);
+    justify-content: calc(50% - 2em);
+}
+.banerimg{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.banerimg .banerchild{
+    width: calc(50% - 2em);
+    justify-content: calc(50% - 2em);
+}
+  
+}
+    
+   
+
+    @media screen and (max-width:47em){
+        body{
+        font-size: 70%;
+        }
+      
+        }
