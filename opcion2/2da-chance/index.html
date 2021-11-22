@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <link rel="stylesheet" href="js/jquery.min.js">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="js/home.js">
 </head>
 
@@ -28,7 +28,7 @@
                 <a href="https://www.instagram.com/accounts/login/">
                     <i class="fab fa-instagram-square" id="insta"></i>
                 </a>
-                <href="https:https://twitter.com/?lang=es">
+                <href="https:https: //twitter.com/?lang=es">
                     <i class="fab fa-twitter-square" id="twiter"></i>
                     </a>
 
@@ -111,10 +111,10 @@
         <br>
         <h2 id="sede-mapa">Sedes</h2>
         <div class="banerimg">
-            
+
             <div class="banerchild">
-                <img class="sedebelgrano" src="img/CentroCulturalRecoleta-2.jpg"  >
-                  
+                <img class="sedebelgrano" src="img/CentroCulturalRecoleta-2.jpg">
+
                 <span>Sede Belgrano</span>
                 <iframe class="mapa-sede"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26287.406677082177!2d-58.468295679472945!3d-34.55543315572103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5d28526611d%3A0xbcb585a9ddc70069!2sBelgrano%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1633355426998!5m2!1ses-419!2sar"></iframe>
@@ -123,7 +123,7 @@
             </div>
             <br>
             <div class="banerchild">
-                <img class="sedecaballito" src="img/caballito2.jpg" alt="fotocaballito" >
+                <img class="sedecaballito" src="img/caballito2.jpg" alt="fotocaballito">
                 <span>Sede Caballito</span>
                 <iframe class="mapa-sede"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26268.057989495082!2d-58.46223982933073!3d-34.616619680720525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3911f8ab2d%3A0x27b394c2f3d87d2d!2sCaballito%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1633355734706!5m2!1ses-419!2sar"></iframe>
@@ -131,7 +131,7 @@
             <br>
             <div class="banerchild">
 
-                <img class="sederamos" src="img/ramosmejia2.jpg" alt="fotoramos" >
+                <img class="sederamos" src="img/ramosmejia2.jpg" alt="fotoramos">
                 <span>Sede Ramos Mejia</span>
                 <iframe class="mapa-sede"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26256.269488222133!2d-58.575659029244036!3d-34.65385219595542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7d93bab75a3%3A0xaafe140bc9dea3db!2sRamos%20Mej%C3%ADa%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1633355822305!5m2!1ses-419!2sar"></iframe>
@@ -139,7 +139,7 @@
             <br>
             <div class="banerchild">
 
-                <img class="sedesanjusto" src="img/san justo2.jpg" alt="fotosanjusto" >
+                <img class="sedesanjusto" src="img/san justo2.jpg" alt="fotosanjusto">
                 <span>Sede San Justo</span>
                 <iframe class="mapa-sede"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52490.970643268636!2d-58.59891539580497!3d-34.6878820150014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc622f9709805%3A0xb5f373c7721a50a5!2sSan%20Justo%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1633355875674!5m2!1ses-419!2sar"></iframe>
@@ -148,7 +148,13 @@
         <br>
         <br>
         <div class="mini-inscripcion">
-            <form action="#" method="GET" class="mini-inscripcion">
+            <form action="#" method="GET" class="mini-inscripcion"> <label for="establecimiento">
+                    <select name="provincia" id="provincia">
+                        <option>PROVINCIA</option>
+                        <option value="valor1">CABA</option>
+                        <option value="valor2">ZONA OESTE</option>
+
+                    </select></label>
                 <label for="establecimiento">
                     <select name="establecimiento" id="establecimiento">
                         <option>ESTABLECIMIENTO</option>
@@ -157,6 +163,7 @@
                         <option value="valor3">Ramos Mejia</option>
                         <option value="valor4">Caballito</option>
                     </select></label>
+
                 <label for="idioma"></label>
                 <select name="idioma" id="idioma">
                     <option>IDIOMA</option>
@@ -166,8 +173,27 @@
                     <option value="valor4">Coreano</option>
                     <option value="valor5">Español</option>
                 </select>
+                <label for="precio"></label>
 
-                <button type="submit"><a href="inscripciom.html">INSCRIBIRTE</a></button>
+                <label for="horario">
+                    <select name="establecimiento" id="horario">
+                        <option>Horario</option>
+                        <option value="valor1">10:00AM</option>
+                        <option value="valor2">11:00AM</option>
+                        <option value="valor3">12:00AM</option>
+                        <option value="valor4">14:00AM</option>
+                        <option value="valor5">15:00AM</option>
+                        <option value="valor6 ">16:00AM</option>
+                        <option value="valor7">17:00AM</option>
+                        <option value="valor8">18:00AM</option>
+
+                    </select></label>
+
+                <label for="establecimiento">
+
+
+                    <input id="precio" type="text" name="precio">
+                    <button type="submit"><a href="inscripciom.html">INSCRIBIRTE</a></button>
 
             </form>
         </div>

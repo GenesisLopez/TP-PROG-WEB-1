@@ -266,9 +266,33 @@ input[type=number] {
             right: 0.5em;
             background-image: url(../img/hamburger.gif);
         }
+        
         .item2{
+            border-top: 2px solid rgb(220,100, 100);
+            width: 100%;
             display: none;
         }
+        .item2 ul{
+            list-style-type: none;
+            margin: 0 auto;
+            overflow: hidden;
+            background-color: rgb(235, 119, 119);
+            width: 100%;
+          }
+          
+          .item2 li {
+            display: block;
+            
+          }
+          
+          .item2 li a {
+            display: block;
+            color: white;
+           
+           
+           
+          }
+        
         
 
         
