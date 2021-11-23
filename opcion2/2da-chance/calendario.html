@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendario</title>
     <link rel="stylesheet" href="css/estilos-calendario.css">
-    
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/calendario.js"></script>
 </head>
 
 <body>
@@ -14,7 +16,7 @@
         <div class="principal">
             <div class="titulo">
             <h1 id="titulo-principal">INSTITUTO LENGUAS VIVAS</h1>
-        </div>
+            </div>
             <div class="logos">
                 <a href="https://www.instagram.com/?hl=es"><div class="logos-redes-sociales-insta"></div></a>
                 <a href="https://es-la.facebook.com/"><div class="logos-redes-sociales-face"></div></a>
@@ -44,27 +46,26 @@
             </article>
         </nav>
     </header>
+    <br>
     <main class="calendario">
 
         <h1>CALENDARIO DE CURSOS</h1>
         <form class="filtro" action="#">
             <label for="">Filtrar por </label>
-            <datalist id="informacion1">
-                <option value="Belgrano">
-                <option value="Ramos Mejia">
-                <option value="Caballito">
-                <option value="San Justo">
-            </datalist>
+            <select id="informacion1">
+                <option value="1">Belgrano</option>
+                <option value="2">Ramos Mejía</option>
+                <option value="3">Caballito</option>
+                <option value="4">San Justo</option>
+            </select>
 
-            <datalist id="informacion2">
-                <option value="Ingles">
-                <option value="Frances">
-                <option value="Aleman">
-                <option value="Italiano">
-            </datalist>
-            
-            <input type="text" list="informacion1" placeholder="Establecimiento">
-            <input type="text" list="informacion2" placeholder="Idioma">
+            <select id="informacion2">
+                <option value="1">Inglés</option>
+                <option value="2">Francés</option>
+                <option value="3">Alemán</option>
+                <option value="4">Italiano</option>
+            <select>
+                <button id="Filtrar">Filtrar</button>
         </form>
 
         <h2>Mes 1</h2>
@@ -73,26 +74,28 @@
         <section class="cuerpo">
 
             <article class="primeraEntrada">
-                <div class="div1">
-                    <img src="img/descarga.jfif" alt="">
-                    <div>
-                    <h6>IDIOMA-NIVEL</h6>
-                    <p>Modalidad:</p>
-                    <p>Dias y horarios:</p>
-                    <p>Fecha de inicio:</p>
-                    <p>Sede:</p>
-                    <a href="inscripcion.html"><input type="button" value="Inscripcion"></a>
+                <div id="fotoingles1" class="div1">
+                    <img src="../2da-chance/img/ingles-1.jpg" alt="">
+                    <div id="inglesramos">
+                    <h6>INGLES-I</h6>
+                    <p>Modalidad: Presencial</p>
+                    <p>Dias y horarios: Lunes y Miercoles 8-10hs</p>
+                    <p>Fecha de inicio:4/10/21</p>
+                    <p>Sede: Ramos Mejia</p>
+                    <p>Precio: $1500</p>
+                    <a href="../2da-chance/inscripciom.html"><input type="button" value="Inscripcion"></a>
                 </div>
             </div>
-                <div class="div1">
-                    <img src="img/descarga.jfif" alt="">
-               <div>
-                    <h6>IDIOMA-NIVEL</h6>
-                    <p>Modalidad:</p>
-                    <p>Dias y horarios:</p>
-                    <p>Fecha de inicio:</p>
-                    <p>Sede:</p>
-                    <a href="inscripcion.html"><input type="button" value="Inscripcion"></a>
+                <div id="fotofrances1" class="div1">
+                    <img src="../2da-chance/img/frances1.png" alt="">
+               <div id="francessanjusto">
+                    <h6>FRANCES-I</h6>
+                    <p>Modalidad: presencial</p>
+                    <p>Dias y horarios: Martes y Viernes 19-21hs</p>
+                    <p>Fecha de inicio:5/10/21</p>
+                    <p>Sede:San Justo</p>
+                    <p>Precio: $1500</p>
+                    <a href="../2da-chance/inscripciom.html"><input type="button" value="Inscripcion"></a>
                 </div>
             </article>
 
@@ -101,26 +104,28 @@
         <section class="cuerpo">
 
             <article class="primeraEntrada">
-                <div class="div1">
-                    <img src="img/descarga.jfif" alt="">
-                    <div>
-                    <h6>IDIOMA-NIVEL</h6>
-                    <p>Modalidad:</p>
-                    <p>Dias y horarios:</p>
-                    <p>Fecha de inicio:</p>
-                    <p>Sede:</p>
-                    <a href="inscripcion.html"><input type="button" value="Inscripcion"></a>
+                <div id="fotoaleman1" class="div1">
+                    <img src="../2da-chance/img/aleman2.jfif" alt="">
+                    <div id="alemancaballito">
+                    <h6>ALEMAN-II</h6>
+                    <p>Modalidad: virtual</p>
+                    <p>Dias y horarios: Miercoles y sabados 9-11hs</p>
+                    <p>Fecha de inicio:6/10/21</p>
+                    <p>Sede: Caballito</p>
+                    <p>Precio: $1500</p>
+                    <a href="../2da-chance/inscripciom.html"><input type="button" value="Inscripcion"></a>
                 </div>
             </div>
-                <div class="div1">
-                    <img src="img/descarga.jfif" alt="">
-               <div>
-                    <h6>IDIOMA-NIVEL</h6>
-                    <p>Modalidad:</p>
-                    <p>Dias y horarios:</p>
-                    <p>Fecha de inicio:</p>
-                    <p>Sede:</p>
-                    <a href="inscripcion.html"><input type="button" value="Inscripcion"></a>
+                <div id="fotoitaliano1" class="div1">
+                    <img src="../2da-chance/img/italiano1-2.jfif" alt="">
+               <div id="italianobelgrano">
+                    <h6>ITALIANO- I y II</h6>
+                    <p>Modalidad: Presencial</p>
+                    <p>Dias y horarios: Lunes miercoles y viernes 20-22hs</p>
+                    <p>Fecha de inicio:4/10/21</p>
+                    <p>Sede:Belgrano</p>
+                    <p>Precio: $1500</p>
+                    <a href="../2da-chance/inscripciom.html"><input type="button" value="Inscripcion"></a>
                 </div>
             </article>
 
@@ -132,26 +137,28 @@
         <section class="cuerpo">
 
             <article class="primeraEntrada">
-                <div class="div1">
-                    <img src="img/descarga.jfif" alt="">
-                    <div>
-                    <h6>IDIOMA-NIVEL</h6>
-                    <p>Modalidad:</p>
-                    <p>Dias y horarios:</p>
-                    <p>Fecha de inicio:</p>
-                    <p>Sede:</p>
-                    <a href="inscripcion.html"><input type="button" value="Inscripcion"></a>
+                <div id="fotoingles2" class="div1">
+                    <img src="../2da-chance/img/ingles2.jfif" alt="">
+                    <div id="inglescaballito">
+                    <h6>INGLES-II</h6>
+                    <p>Modalidad:Virtual</p>
+                    <p>Dias y horarios:Miercoles y viernes 18-22hs</p>
+                    <p>Fecha de inicio:6/10/21</p>
+                    <p>Sede:Caballito</p>
+                    <p>Precio: $1500</p>
+                    <a href="../2da-chance/inscripciom.html"><input type="button" value="Inscripcion"></a>
                 </div>
             </div>
-                <div class="div1">
-                    <img src="img/descarga.jfif" alt="">
-               <div>
-                    <h6>IDIOMA-NIVEL</h6>
-                    <p>Modalidad:</p>
-                    <p>Dias y horarios:</p>
-                    <p>Fecha de inicio:</p>
-                    <p>Sede:</p>
-                    <a href="inscripcion.html"><input type="button" value="Inscripcion"></a>
+                <div id="fotofrances2" class="div1">
+                    <img src="../2da-chance/img/frances3.jfif" alt="">
+               <div id="francessanjusto2">
+                    <h6>FRANCES-III</h6>
+                    <p>Modalidad:Presencial</p>
+                    <p>Dias y horarios:Jueves y Sabado 10-12hs</p>
+                    <p>Fecha de inicio:7/10/21</p>
+                    <p>Sede:San Justo</p>
+                    <p>Precio: $1500</p>
+                    <a href="../2da-chance/inscripciom.html"><input type="button" value="Inscripcion"></a>
                 </div>
             </article>
 
@@ -160,26 +167,28 @@
         <section class="cuerpo">
 
             <article class="primeraEntrada">
-                <div class="div1">
-                    <img src="img/descarga.jfif" alt="">
-                    <div>
-                    <h6>IDIOMA-NIVEL</h6>
-                    <p>Modalidad:</p>
-                    <p>Dias y horarios:</p>
-                    <p>Fecha de inicio:</p>
-                    <p>Sede:</p>
-                    <a href="inscripcion.html"><input type="button" value="Inscripcion"></a>
+                <div id="fotoitaliano2" class="div1">
+                    <img src="../2da-chance/img/italiano4.jfif" alt="">
+                    <div id="italianocaballito">
+                    <h6>ITALIANO-IV</h6>
+                    <p>Modalidad:Virtual</p>
+                    <p>Dias y horarios:Martes y jueves 20-22hs</p>
+                    <p>Fecha de inicio:5/10/21</p>
+                    <p>Sede:Caballito</p>
+                    <p>Precio: $1500</p>
+                    <a href="../2da-chance/inscripciom.html"><input type="button" value="Inscripcion"></a>
                 </div>
             </div>
-                <div class="div1">
-                    <img src="img/descarga.jfif" alt="">
-               <div>
-                    <h6>IDIOMA-NIVEL</h6>
-                    <p>Modalidad:</p>
-                    <p>Dias y horarios:</p>
-                    <p>Fecha de inicio:</p>
-                    <p>Sede:</p>
-                    <a href="inscripcion.html"><input type="button" value="Inscripcion"></a>
+                <div id="fotoaleman2" class="div1">
+                    <img src="../2da-chance/img/aleman1.jfif" alt="">
+               <div id="alemanramos">
+                    <h6>ALEMAN-I</h6>
+                    <p>Modalidad:Virtual</p>
+                    <p>Dias y horarios:Miercoles y viernes 15-17hs</p>
+                    <p>Fecha de inicio:6/10/21</p>
+                    <p>Sede:Ramos Mejia</p>
+                    <p>Precio: $1500</p>
+                    <a href="../2da-chance/inscripciom.html"><input type="button" value="Inscripcion"></a>
                 </div>
             </article>
 
@@ -187,7 +196,32 @@
     </div>
     </main>
     <footer>
-        <h4>Datos del grupo</h4>
+        <article>
+            <h4 class="titulo-inferior">Participantes</h4>
+            <ul class="participantes">
+                <li>Gamarra Nahuel - 33.708.926</li>
+                <li>Dubini Lucas - 37.376.784</li>
+                <li>Gomez Christian - 38.125.166</li>
+                <li>Lopez Genesis - 39.214.204</li>
+
+            </ul>
+        </article>
+        <article>
+            <h4 class="titulo-inferior">Menu inferior</h4>
+            <ul class="menu-inferior">
+                <li><a href="sedes.html" target="_blank">Sedes</a></li>
+                <li><a href="inscripciom.html" target="_blank">Incripcion</a></li>
+                <li><a href="calendario.html" target="_blank">Caendario</a></li>
+                <li><a href="contacto.html" target="_blank">Contacto</a></li>
+            </ul>
+        </article>
+        <article >
+            <h4 class="titulo-inferior">Redes sociales</h4>
+            <div class="redes-inferior">
+            <a href="https://www.instagram.com/?hl=es"><div class="logos-redes-sociales-insta"></div></a>
+            <a href="https://es-la.facebook.com/" ><div class="logos-redes-sociales-face"></div></a>
+        </div>
+        </article>
     </footer>
 </body>
 </html>
