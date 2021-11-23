@@ -32,12 +32,14 @@ img{
     
 }
 .cuadritos{
-    width: 18.75em;
+    width: 15.75em;
     margin: 0.3em;
     height: 14.37em;
     border-radius: 15%;
     background-color: rgb(250, 223, 223);
     position: relative;
+    
+
 }
 .cuadritos h3{
     color: #fff;
@@ -86,25 +88,29 @@ img{
     background-position: center;
 }
 .banerimg{
-    
+    position: relative;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;  
     display: inline-flex;
     text-align: center;
 }
+#sede-mapa{
+    text-align: center;
+    font-size: 3em;
+}
 .banerchild{
     width: 25%;
-   
-    width: calc(25% - 2em);
+   display: block;
+    width: calc(25% - 3em);
    
 }
 .banerchild span{
-    position: absolute;
+    font-size: 1.5em;
     right: 3.75em;
     top: 0.3em;
-    background-color:white;
+    background-color: rgb(240, 245, 241);
     
 }
 
@@ -143,7 +149,9 @@ img{
    .cuadros .cuadritos{
     width: calc(50% - 2em);
     justify-content: calc(50% - 2em);
+    width: 24.75em;
 }
+
 .banerimg{
     display: flex;
     flex-wrap: wrap;
@@ -161,6 +169,52 @@ img{
     @media screen and (max-width:47em){
         body{
         font-size: 70%;
-        }
       
         }
+        baner-cursos{
+            width: 600%;
+            display: block;
+           
+         }
+         .cuadros{
+            justify-content: center;
+         }
+         
+        .cuadros .cuadritos{
+            width: calc(100% - 2em);
+            justify-content: center;
+            width: 35.75em;
+            margin: 0.3em;
+            height: 16.37em;
+            border-radius: 15%;
+            background-color: rgb(250, 223, 223);
+            position: relative;
+         }
+         .banerimg{
+             display: block;    
+             width: 150%;
+             justify-content: center;
+            
+           
+        }
+        #sede-mapa{
+            text-align: center;
+            font-size: 3em;
+        }
+        .banerchild{
+           justify-content: center;
+           display: block;
+            width: calc(90% - 3em);
+           
+        }
+        .banerchild span{
+            font-size: 1.5em;
+            right: 3.75em;
+            top: 0.3em;
+            background-color: rgb(240, 245, 241);
+            
+        }
+        
+
+        }
+        
