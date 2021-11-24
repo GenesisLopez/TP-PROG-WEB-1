@@ -1,28 +1,46 @@
 <!DOCTYPE html>
 <html lang="estilos">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="css/estilos.css">
+
     <link rel="stylesheet" href="css/estilos-home.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="js/home.js">
 </head>
+
 <body>
     <header>
         <div class="principal">
-            <div class="titulo">
+
             <h1 id="titulo-principal">INSTITUTO LENGUAS VIVAS</h1>
-        </div>
-            <div class="logos">
-                <a href="https://www.instagram.com/?hl=es"><div class="logos-redes-sociales-insta"></div></a>
-                <a href="https://es-la.facebook.com/"><div class="logos-redes-sociales-face"></div></a>
+
+            <div class="redes">
+                <a href="https://es-la.facebook.com/">
+                    <i class="fab fa-facebook-square" id="face"></i></a>
+                <a href="https://www.instagram.com/accounts/login/">
+                    <i class="fab fa-instagram-square" id="insta"></i>
+                </a>
+                <href="https:https: //twitter.com/?lang=es">
+                    <i class="fab fa-twitter-square" id="twiter"></i>
+                    </a>
+
+
             </div>
         </div>
-        
+
+        </div>
+
         <nav class="contenedor">
-           <article class="item1">
-                <ul >
+            <article class="item1">
+                <ul>
                     <li class="banderas"><img src="img/aleman.jpg" alt="aleman"></li>
                     <li class="banderas"> <img src="img/eeuu-1.jpg" alt="Ingles"></li>
                     <li class="banderas"><img src="img/portugal.jpg" alt="portugues"></li>
@@ -32,15 +50,16 @@
                 </ul>
             </article>
             <article class="item2">
-            <ul>
-                <li><a href="index.html" target="_blank">Home</a></li>
-                <li><a href="sedes.html" target="_blank">Sedes</a></li>
-                <li><a href="inscripciom.html" target="_blank">Incripcion</a></li>
-                <li><a href="calendario.html" target="_blank">Calendario</a></li>
-                <li><a href="contacto.html" target="_blank">Contacto</a></li>
-                <li><a href="nosotros.html" target="_blank">Nosotros</a></li>
-              </ul>
+                <ul>
+                    <li><a href="index.html" target="_blank">Home</a></li>
+                    <li><a href="sedes.html" target="_blank">Sedes</a></li>
+                    <li><a href="inscripciom.html" target="_blank">Incripcion</a></li>
+                    <li><a href="calendario.html" target="_blank">Calendario</a></li>
+                    <li><a href="contacto.html" target="_blank">Contacto</a></li>
+                    <li><a href="nosotros.html" target="_blank">Nosotros</a></li>
+                </ul>
             </article>
+            <a class="menu-hamburguesa"></a>
         </nav>
     </header>
     <main>
@@ -48,96 +67,134 @@
 
 
         </section>
-        <divlfg class="baner-cursos">
+        <div class="baner-cursos">
             <h2>Cursos</h2>
-            <article class="cuadritos" id="ingles">
-                <article class="ingles">
-                    <h3><a href="contacto.html">Ingles</a></h3>
-                    <p>Precio <br> $1500</p>
-                    
-                   
+            <div class="cuadros">
+                <article class="cuadritos" id="ingles">
+                    <article class="ingles">
+                        <h3><a href="contacto.html">Ingles</a></h3>
+                        <p>Precio <br> $1500</p>
+
+
+                    </article>
                 </article>
-            </article>
-            <article class="cuadritos" id="portugal" >
-                <article >
-                    <h3><a href="contacto.html">Portugues</a></h3>
-                    <p>Precio <br> $1500</p>
-                    
+                <article class="cuadritos" id="portugal">
+                    <article>
+                        <h3><a href="contacto.html">Portugues</a></h3>
+                        <p>Precio <br> $1500</p>
+
+                    </article>
                 </article>
-            </article>
-            <article class="cuadritos" id="aleman">
-                <article>
-                    <h3><a href="contacto.html">Aleman</a></h3>
-                    <p>Precio <br> $1500</p>
-                   
+                <article class="cuadritos" id="aleman">
+                    <article>
+                        <h3><a href="contacto.html">Aleman</a></h3>
+                        <p>Precio <br> $1500</p>
+
+                    </article>
                 </article>
-            </article>
-            <article class="cuadritos" id="coreano">
-                <article >
-                    <h3><a href="contacto.html">Coreano</a></h3>
-                    <p>Precio <br> $1500</p>
-                   
+                <article class="cuadritos" id="coreano">
+                    <article>
+                        <h3><a href="contacto.html">Coreano</a></h3>
+                        <p>Precio <br> $1500</p>
+
+                    </article>
                 </article>
-            </article>
-           
-            
+            </div>
+
+
+
+
         </div>
         <br>
         <br>
         <br>
         <br>
+        <h2 id="sede-mapa">Sedes</h2>
         <div class="banerimg">
-            <div class="banerchild"> 
-            <img class="sedebelgrano" src="img/CentroCulturalRecoleta-1.jpg" alt="fotbelgrano" width="230px" height="150px">
-            <span>Sede Belgrano</span>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26287.406677082177!2d-58.468295679472945!3d-34.55543315572103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5d28526611d%3A0xbcb585a9ddc70069!2sBelgrano%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1633355426998!5m2!1ses-419!2sar" width="230" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                
+
+            <div class="banerchild">
+                <img class="sedebelgrano" src="img/CentroCulturalRecoleta-2.jpg">
+
+                <span>Sede Belgrano</span>
+                <iframe class="mapa-sede"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26287.406677082177!2d-58.468295679472945!3d-34.55543315572103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5d28526611d%3A0xbcb585a9ddc70069!2sBelgrano%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1633355426998!5m2!1ses-419!2sar"></iframe>
+                ></iframe>
+
             </div>
             <br>
             <div class="banerchild">
-            <img class="sedecaballito" src="img/caballito.jpg" alt="fotocaballito" width="230px" height="150px">
-            <span>Sede Caballito</span>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26268.057989495082!2d-58.46223982933073!3d-34.616619680720525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3911f8ab2d%3A0x27b394c2f3d87d2d!2sCaballito%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1633355734706!5m2!1ses-419!2sar" width="230" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <img class="sedecaballito" src="img/caballito2.jpg" alt="fotocaballito">
+                <span>Sede Caballito</span>
+                <iframe class="mapa-sede"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26268.057989495082!2d-58.46223982933073!3d-34.616619680720525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3911f8ab2d%3A0x27b394c2f3d87d2d!2sCaballito%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1633355734706!5m2!1ses-419!2sar"></iframe>
             </div>
             <br>
             <div class="banerchild">
-            
-            <img class="sederamos" src="img/ramosmejia.jpg" alt="fotoramos" width="230px" height="150px">
-            <span>Sede Ramos Mejia</span>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26256.269488222133!2d-58.575659029244036!3d-34.65385219595542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7d93bab75a3%3A0xaafe140bc9dea3db!2sRamos%20Mej%C3%ADa%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1633355822305!5m2!1ses-419!2sar" width="230" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                <img class="sederamos" src="img/ramosmejia2.jpg" alt="fotoramos">
+                <span>Sede Ramos Mejia</span>
+                <iframe class="mapa-sede"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26256.269488222133!2d-58.575659029244036!3d-34.65385219595542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7d93bab75a3%3A0xaafe140bc9dea3db!2sRamos%20Mej%C3%ADa%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1633355822305!5m2!1ses-419!2sar"></iframe>
             </div>
             <br>
             <div class="banerchild">
-            
-            <img class="sedesanjusto" src="img/san justo.jpg" alt="fotosanjusto" width="230px" height="150px">
-            <span>Sede San Justo</span>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52490.970643268636!2d-58.59891539580497!3d-34.6878820150014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc622f9709805%3A0xb5f373c7721a50a5!2sSan%20Justo%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1633355875674!5m2!1ses-419!2sar" width="230" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                <img class="sedesanjusto" src="img/san justo2.jpg" alt="fotosanjusto">
+                <span>Sede San Justo</span>
+                <iframe class="mapa-sede"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52490.970643268636!2d-58.59891539580497!3d-34.6878820150014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc622f9709805%3A0xb5f373c7721a50a5!2sSan%20Justo%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1633355875674!5m2!1ses-419!2sar"></iframe>
             </div>
         </div>
         <br>
         <br>
         <div class="mini-inscripcion">
-            <form action="#" method="GET" class="mini-inscripcion">
+            <form action="#" method="GET" class="mini-inscripcion"> <label for="establecimiento">
+                    <select name="provincia" id="provincia">
+                        <option>PROVINCIA</option>
+                        <option value="valor1">CABA</option>
+                        <option value="valor2">ZONA OESTE</option>
+
+                    </select></label>
                 <label for="establecimiento">
-                <select name="establecimiento" id="establecimiento">
-                    <option >ESTABLECIMIENTO</option>
-                    <option value="valor1">Belgrano</option>
-                    <option value="valor2">San justo</option>
-                    <option value="valor3">RAmos Mejia</option>
-                    <option value="valor4">Caballito</option>
-                </select></label>
+                    <select name="establecimiento" id="establecimiento">
+                        <option>ESTABLECIMIENTO</option>
+                        <option value="valor1">Belgrano</option>
+                        <option value="valor2">San justo</option>
+                        <option value="valor3">Ramos Mejia</option>
+                        <option value="valor4">Caballito</option>
+                    </select></label>
+
                 <label for="idioma"></label>
                 <select name="idioma" id="idioma">
-                    <option >IDIOMA</option>
+                    <option>IDIOMA</option>
                     <option value="valor1">Ingles</option>
                     <option value="valor2">Aleman</option>
                     <option value="valor3">portugues</option>
                     <option value="valor4">Coreano</option>
                     <option value="valor5">Español</option>
                 </select>
-               
-                <button type="submit"><a href="inscripciom.html">INSCRIBIRTE</a></button>
-               
+                <label for="precio"></label>
+
+                <label for="horario">
+                    <select name="establecimiento" id="horario">
+                        <option>Horario</option>
+                        <option value="valor1">10:00AM</option>
+                        <option value="valor2">11:00AM</option>
+                        <option value="valor3">12:00AM</option>
+                        <option value="valor4">14:00AM</option>
+                        <option value="valor5">15:00AM</option>
+                        <option value="valor6 ">16:00AM</option>
+                        <option value="valor7">17:00AM</option>
+                        <option value="valor8">18:00AM</option>
+
+                    </select></label>
+
+                <label for="establecimiento">
+
+
+                    <input id="precio" type="text" name="precio">
+                    <button type="submit"><a href="inscripciom.html">INSCRIBIRTE</a></button>
+
             </form>
         </div>
 
@@ -145,7 +202,7 @@
     </main>
     <br>
     <br>
-    <footer >
+    <footer>
         <article>
             <h4 class="titulo-inferior">Participantes</h4>
             <ul class="participantes">
@@ -159,22 +216,31 @@
         <article>
             <h4 class="titulo-inferior">Menu inferior</h4>
             <ul class="menu-inferior">
-               
+
                 <li><a href="sedes.html" target="_blank">Sedes</a></li>
                 <li><a href="inscripciom.html" target="_blank">Incripcion</a></li>
                 <li><a href="calendario.html" target="_blank">Caendario</a></li>
                 <li><a href="contacto.html" target="_blank">Contacto</a></li>
-            
+
             </ul>
         </article>
-        <article >
+        <article>
             <h4 class="titulo-inferior">Redes sociales</h4>
-            <div class="redes-inferior">
-            <a href="https://www.instagram.com/?hl=es"><div class="logos-redes-sociales-insta"></div></a>
-            <a href="https://es-la.facebook.com/" ><div class="logos-redes-sociales-face"></div></a>
-        </div>
+            <div class="redes">
+                <a href="https://es-la.facebook.com/">
+                    <i class="fab fa-facebook-square" id="face"></i></a>
+                <a href="https://www.instagram.com/accounts/login/">
+                    <i class="fab fa-instagram-square" id="insta"></i>
+                </a>
+                <a href="https://twitter.com/?lang=es">
+                    <i class="fab fa-twitter-square" id="twiter"></i>
+                </a>
+
+
+            </div>
         </article>
     </footer>
     <script src="js/home.js"></script>
-</body>
+</body>--->
+
 </html>

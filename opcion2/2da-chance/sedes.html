@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sedes</title>
     <link rel="stylesheet" href="css/estilos-sedes.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/sedes.js"></script>
 </head>
 <body>
     <header>
@@ -46,8 +48,14 @@
 
         <h2 id="titulo-sede">Sedes</h2>
 
-        
-            <article>
+            <label for="Región">Región</label>
+            <select name="region" id="region">
+                <option value="">Seleccione una región</option>
+                <option value="1">CABA</option>
+                <option value="2">Zona Oeste</option>
+            </select>
+            <button id="filtrar">Filtrar</button>
+            <article id="belgrano">
                 <img class="imagenes-sedes" src="img/CentroCulturalRecoleta-1.jpg" alt="fotoBelgrano">
                 <h3 class="nombres-sedes" >Belgrano
                 <ul class="info-sedes"> 
@@ -59,7 +67,7 @@
                 </h3>
             </article>
 
-            <article>
+            <article id="caballito">
                 <img class="imagenes-sedes" src="img/caballito.jpg" alt="fotoCaballito">
                 <h3 class="nombres-sedes" >Caballito
                 <ul class="info-sedes"> 
@@ -71,7 +79,7 @@
                 </h3>
             </article>
 
-            <article>
+            <article id="ramos">
                 <img class="imagenes-sedes" src="img/ramosmejia.jpg" alt="fotoRamos">
                 <h3 class="nombres-sedes" >Ramos mejía
                 <ul class="info-sedes"> 
@@ -83,7 +91,7 @@
                 </h3>
             </article>
 
-            <article>
+            <article id="sanjusto">
                 <img class="imagenes-sedes" src="img/san justo.jpg" alt="fotoSanjusto">
                 <h3 class="nombres-sedes" >San justo
                 <ul class="info-sedes"> 
