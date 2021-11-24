@@ -1,15 +1,31 @@
-.carrusel{
-    width: 100%;
-    height: 31.25em;
-    background-image: url(../img/img03.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity:  0.8;
-}
+
+
+
+
+
+
+
+
+
+
+
+
 img{
     max-width: 100%;
     height: auto;
     }
+
+    .carrusel{
+        width: 100%;
+        text-align: center;
+        /*background-image: url(../img/img03.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;*/
+        opacity:  0.8;
+    }
+    .carruse img{
+        max-width: 80%;
+    }    
 .baner-cursos{
 
     width: 100%;
@@ -170,11 +186,12 @@ img{
 
     @media screen and (max-width:47em){
         body{
+            width: 100%;
         font-size: 70%;
       
         }
         baner-cursos{
-            width: 600%;
+            width: 60%;
             display: block;
            
          }
@@ -217,6 +234,21 @@ img{
             
         }
         
-
+        .mini-inscripcion form {
+            display: block;
         }
+        .mini-inscripcion form select{
+        display: inline-block;
+        width: calc(50% - 3em);
+
+        }       
+        
+    }     
+        
+        
+        
+        
+        
+        
+        
         

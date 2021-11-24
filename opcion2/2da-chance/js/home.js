@@ -8,13 +8,13 @@ $(document).ready(function() {
     
 $("a.menu-hamburguesa").click(function (){
     if($(".item2").is(":visible")){
-       $(".item2").hide();
+       $(".item2").slideUp();
         console.log("visible")
     } else {
-        $(".item2").show();
+        $(".item2").slideDown();
+        console.log("tapado");
     }
 })
-
 let opcionOeste= document.getElementsByClassName("oeste");
 let opciones= document.getElementById("provincia");
 let opcionEstablecimiento=document.getElementById("establecimiento");
@@ -94,6 +94,11 @@ console.log(texto4);
 
 
 
+});
+$(".slider").slick({
+    autoplay: true,
+   speed: 350,
+   infinite: true
 });
 
 })
