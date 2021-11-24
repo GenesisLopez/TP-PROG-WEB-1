@@ -292,3 +292,21 @@ input[type=number] {
     background-color: blue;
     color: floralwhite;
 }
+
+#regiontext{
+
+    margin-left: 6%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    padding: 1%;
+
+}
+#filtrar{
+    
+    display: inline-block;
+    text-decoration: none;
+    background-color: blue;
+    color: floralwhite;
+    margin-left: 2%;
+    padding: 0.5%;
+}

@@ -58,42 +58,44 @@
                 <h3>CONTACTO</h3>
                 <br>
                 <section>
-                    <form id= "form" action="#" method="POST">
+
+                    <form action="#" method="POST" name="form" onsubmit="return validar();">
                         <article>
 
-                            <label for="nombre"></label>
-                            <input id="nombre" type="text" name="nombre" placeholder="Nombre" size="70%">
+                            <label for="nombreyapellido"></label>
+                            <input id="nombre-apellido" name="nombre-apellido" type="text"
+                                placeholder="Nombre y Apellido" size="70%">
                         </article>
                         <br>
                         <article>
+                            <label for="correo"></label>
+                            <input id="correo" type="email" name="correo" placeholder="Email" required size="70%">
 
-                            <label for="apellido"></label>
-                            <input id="apellido" type="text" name="apellido" placeholder="Apellido" size="70%">
-                        </article>
-                        <br>
-                        <article>
-                            <label for="email"></label>
-                            <input id="email" type="email" name="email" placeholder="Email"  size="70%">
                         </article>
                         <br>
                         <article>
                             <label for="telefono"></label>
-                            <input id="telefono" type="text" name="telefono" placeholder="Telefono" size="70%">
+
+                            <input id="telefono" type="text" name="telefono" placeholder="Telefono">
+
                         </article>
                         <br>
                         
                         <article>
-                            <textarea name="comentario" id="comentario" cols="69" rows="5" 
-                                placeholder="Deja tu mensaje..." ></textarea>
-                            <div id="caracteres">Máximo 1000 caracteres: 0</div>
+
+                            <textarea name="message" id="contacto" cols="69" rows="10" 
+                                placeholder="Deja tu mensaje..." onkeyup="contarCaracteres(this);"></textarea>
+                                
+                <br><br>
+                <input type="submit" value="Enviar" class="botones">
+                <br>
+                <p class="campos-obligatorios">* campos obligatorios</p>
+                <p id="numCar"></p>
+                <br>
+                <div id="mensaje" class="error"></div>
                             <br>
-                            <div id="myModal" class="modal">
-                                <div class="modal-content">
                             
-                                    <p>Envio Exitoso!</p>
-                                </div>
-                            </div>
-                            <button class="botondecontacto">ENVIAR</button>
+
                         </article>
                         <br>
                         <div id="mensaje" class="error">
@@ -178,6 +180,10 @@
             </div>
         </article>
     </footer>
+    <script src="js/validar-contacto.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/funciones.js"></script>
+    <script src="js/funcionscroll.js"></script>
 </body>
 
 </html>
