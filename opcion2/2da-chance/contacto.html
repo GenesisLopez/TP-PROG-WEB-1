@@ -8,6 +8,10 @@
     <title>Contacto</title>
     <link rel="stylesheet" href="css/estilos.css">
     <link href="css/all.css" rel="stylesheet"> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="js/validacion.js"></script>
+   
+
 </head>
 
 <body>
@@ -54,31 +58,49 @@
                 <h3>CONTACTO</h3>
                 <br>
                 <section>
-                    <form action="#" method="POST">
+
+                    <form action="#" method="POST" name="form" onsubmit="return validar();">
                         <article>
 
                             <label for="nombreyapellido"></label>
-                            <input id="nombreyapellido" type="text" name="nombreyapellido"
+                            <input id="nombre-apellido" name="nombre-apellido" type="text"
                                 placeholder="Nombre y Apellido" size="70%">
                         </article>
                         <br>
                         <article>
-                            <label for="mail"></label>
-                            <input id="mail" type="email" name="email" placeholder="Email" required size="70%">
+                            <label for="correo"></label>
+                            <input id="correo" type="email" name="correo" placeholder="Email" required size="70%">
+
                         </article>
                         <br>
                         <article>
                             <label for="telefono"></label>
-                            <input id="telefono" type="number" name="telefono" placeholder="Telefono">
+
+                            <input id="telefono" type="text" name="telefono" placeholder="Telefono">
+
                         </article>
                         <br>
                         
                         <article>
-                            <textarea name="mensaje" id="" cols="69" rows="10" 
-                                placeholder="Deja tu mensaje..." ></textarea>
+
+                            <textarea name="message" id="contacto" cols="69" rows="10" 
+                                placeholder="Deja tu mensaje..." onkeyup="contarCaracteres(this);"></textarea>
+                                
+                <br><br>
+                <input type="submit" value="Enviar" class="botones">
+                <br>
+                <p class="campos-obligatorios">* campos obligatorios</p>
+                <p id="numCar"></p>
+                <br>
+                <div id="mensaje" class="error"></div>
                             <br>
-                            <button class="botondecontacto">ENVIAR</button>
+                            
+
                         </article>
+                        <br>
+                        <div id="mensaje" class="error">
+                        </div>
+
                         
                     </form>
                 </section>
@@ -158,6 +180,10 @@
             </div>
         </article>
     </footer>
+    <script src="js/validar-contacto.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/funciones.js"></script>
+    <script src="js/funcionscroll.js"></script>
 </body>
 
 </html>
