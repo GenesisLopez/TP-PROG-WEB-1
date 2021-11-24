@@ -8,6 +8,10 @@
     <title>Contacto</title>
     <link rel="stylesheet" href="css/estilos.css">
     <link href="css/all.css" rel="stylesheet"> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="js/validacion.js"></script>
+   
+
 </head>
 
 <body>
@@ -54,31 +58,47 @@
                 <h3>CONTACTO</h3>
                 <br>
                 <section>
-                    <form action="#" method="POST">
+                    <form id= "form" action="#" method="POST">
                         <article>
 
-                            <label for="nombreyapellido"></label>
-                            <input id="nombreyapellido" type="text" name="nombreyapellido"
-                                placeholder="Nombre y Apellido" size="70%">
+                            <label for="nombre"></label>
+                            <input id="nombre" type="text" name="nombre" placeholder="Nombre" size="70%">
                         </article>
                         <br>
                         <article>
-                            <label for="mail"></label>
-                            <input id="mail" type="email" name="email" placeholder="Email" required size="70%">
+
+                            <label for="apellido"></label>
+                            <input id="apellido" type="text" name="apellido" placeholder="Apellido" size="70%">
+                        </article>
+                        <br>
+                        <article>
+                            <label for="email"></label>
+                            <input id="email" type="email" name="email" placeholder="Email"  size="70%">
                         </article>
                         <br>
                         <article>
                             <label for="telefono"></label>
-                            <input id="telefono" type="number" name="telefono" placeholder="Telefono">
+                            <input id="telefono" type="text" name="telefono" placeholder="Telefono" size="70%">
                         </article>
                         <br>
                         
                         <article>
-                            <textarea name="mensaje" id="" cols="69" rows="10" 
+                            <textarea name="comentario" id="comentario" cols="69" rows="5" 
                                 placeholder="Deja tu mensaje..." ></textarea>
+                            <div id="caracteres">Máximo 1000 caracteres: 0</div>
                             <br>
+                            <div id="myModal" class="modal">
+                                <div class="modal-content">
+                            
+                                    <p>Envio Exitoso!</p>
+                                </div>
+                            </div>
                             <button class="botondecontacto">ENVIAR</button>
                         </article>
+                        <br>
+                        <div id="mensaje" class="error">
+                        </div>
+
                         
                     </form>
                 </section>
