@@ -9,10 +9,12 @@ $(document).ready(function() {
 $("a.menu-hamburguesa").click(function (){
     if($(".item2").is(":visible")){
        $(".item2").slideUp();
-        console.log("visible")
+        console.log("visible");
     } else {
         $(".item2").slideDown();
         console.log("tapado");
+    
+         e.preventDefault(); 
     }
 })
 let opcionOeste= document.getElementsByClassName("oeste");
