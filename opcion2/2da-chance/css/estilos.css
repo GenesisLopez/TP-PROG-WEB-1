@@ -177,7 +177,7 @@ nav{
  } 
  .redes-inferior{
      display: flex;
-     flex-direction: row;/*si los hijos se muestran en filas o en columnas*/
+     flex-direction: row;
      
  }
 
@@ -255,9 +255,9 @@ input[type=number] {
         body{
         font-size: 70%;
         }
-        .principal h1{
-            color: rgb(50, 189, 22);
-        }
+       
+       
+       
         a.menu-hamburguesa{
             display: block;
             width: 4em;
