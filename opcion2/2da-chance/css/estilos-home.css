@@ -1,46 +1,68 @@
 .carrusel{
     width: 100%;
-    height: 500px;
+    height: 31.25em;
     background-image: url(../img/img03.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     opacity:  0.8;
 }
-.baner-cursos article{
-  display: inline-block;
-   
+img{
+    max-width: 100%;
+    height: auto;
+    }
+.baner-cursos{
+
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    display: calc(45%);
 
 }
+.baner-cursos article{
+  
+    width: 20%;  
+    display: inline-flex;
+    text-align: center;
+    
+}
 .baner-cursos h2{
-    font-size: 40px;
+    font-size: 2.5em;
     text-align: center;
     margin: 1em;
+    
 }
 .cuadritos{
-    width: 300px;
-    margin: 5px;
-    height: 300px;
-    border-radius: 10%;
-    background-color: blue;
+    width: 15.75em;
+    margin: 0.3em;
+    height: 14.37em;
+    border-radius: 15%;
+    background-color: rgb(250, 223, 223);
     position: relative;
+    
+
 }
 .cuadritos h3{
     color: #fff;
     background-color: black;
     position: absolute;
     right: 0;
-    top: 25px;
-    padding: 5px;
+    top: 1.55em;
+    padding: 0.3em;
 
 }
 .cuadritos p{
     position: absolute;
     bottom: 5%;
     background-color: cornsilk;
-    margin: 3px;
-    padding: 2px;
+    margin: 0.2em;
+    padding: 0.15em;
 
 }
+.cuadritos a{
+   text-decoration: none;
+   color: #fff;
+}
+
 #ingles{
     background-image: url(../img/eeuu-1.jpg);
     background-repeat: no-repeat;
@@ -66,21 +88,135 @@
     background-position: center;
 }
 .banerimg{
-    
-    display: inline-block;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     width: 100%;  
     display: inline-flex;
     text-align: center;
 }
+#sede-mapa{
+    text-align: center;
+    font-size: 3em;
+}
 .banerchild{
     width: 25%;
-    position: relative;
+   display: block;
+    width: calc(25% - 3em);
+   
 }
 .banerchild span{
-    position: absolute;
-    right: 60px;
-    top: 5px;
-    background-color:white;
-    
+
+    font-size: 1.5em;
+    right: 3.75em;
+    top: 0.3em;
+    background-color: rgb(240, 245, 241);
+
     
 }
+
+.mini-inscripcion form{
+   margin-top: 1.8em;
+   text-align: center;
+  font-size: larger;
+ 
+ }
+
+
+.mini-inscripcion form select{
+    background-color: rgb(225, 143, 137);
+   border-collapse: separate;
+    color: rgb(255, 255, 255);
+    border-radius: 10% ;
+    box-sizing: content-box;
+}
+.mapa-sede{
+    width: 100%;
+    height: 9.37em;
+
+    
+}
+@media screen and (max-width:60em){
+    body{
+    font-size: 90%;
+
+    }
+  
+   .cuadros{
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+   }
+   .cuadros .cuadritos{
+    width: calc(50% - 2em);
+    justify-content: calc(50% - 2em);
+    width: 24.75em;
+}
+
+.banerimg{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.banerimg .banerchild{
+    width: calc(50% - 2em);
+    justify-content: calc(50% - 2em);
+}
+  
+}
+    
+   
+
+    @media screen and (max-width:47em){
+        body{
+        font-size: 70%;
+      
+        }
+        baner-cursos{
+            width: 600%;
+            display: block;
+           
+         }
+         .cuadros{
+            justify-content: center;
+         }
+         
+        .cuadros .cuadritos{
+            width: calc(100% - 2em);
+            justify-content: center;
+            width: 35.75em;
+            margin: 0.3em;
+            height: 16.37em;
+            border-radius: 15%;
+            background-color: rgb(250, 223, 223);
+            position: relative;
+         }
+         .banerimg{
+             display: block;    
+             width: 150%;
+             justify-content: center;
+            
+           
+        }
+        #sede-mapa{
+            text-align: center;
+            font-size: 3em;
+        }
+        .banerchild{
+           justify-content: center;
+           display: block;
+            width: calc(90% - 3em);
+           
+        }
+        .banerchild span{
+            font-size: 1.5em;
+            right: 3.75em;
+            top: 0.3em;
+            background-color: rgb(240, 245, 241);
+            
+        }
+        
+
+        }
+        

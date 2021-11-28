@@ -8,6 +8,10 @@
     <title>Contacto</title>
     <link rel="stylesheet" href="css/estilos.css">
     <link href="css/all.css" rel="stylesheet"> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="js/validacion.js"></script>
+   
+
 </head>
 
 <body>
@@ -54,6 +58,7 @@
                 <h3>CONTACTO</h3>
                 <br>
                 <section>
+
                     <form action="#" method="POST" name="form" onsubmit="return validar();">
                         <article>
 
@@ -65,15 +70,19 @@
                         <article>
                             <label for="correo"></label>
                             <input id="correo" type="email" name="correo" placeholder="Email" required size="70%">
+
                         </article>
                         <br>
                         <article>
                             <label for="telefono"></label>
+
                             <input id="telefono" type="text" name="telefono" placeholder="Telefono">
+
                         </article>
                         <br>
                         
                         <article>
+
                             <textarea name="message" id="contacto" cols="69" rows="10" 
                                 placeholder="Deja tu mensaje..." onkeyup="contarCaracteres(this);"></textarea>
                                 
@@ -86,7 +95,12 @@
                 <div id="mensaje" class="error"></div>
                             <br>
                             
+
                         </article>
+                        <br>
+                        <div id="mensaje" class="error">
+                        </div>
+
                         
                     </form>
                 </section>
