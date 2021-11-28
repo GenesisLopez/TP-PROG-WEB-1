@@ -43,91 +43,80 @@
         </nav>
     </header>
     <main>
-        <br>
-        <br>
-        <h3 class="center">INSCRIPCION</h3>
-        <br>
-        <p>Inscripcion al curso de idiomas Lenguas vivas</p>
-        <br>
-        <p>El precio es de la inscripcion es de $1.500 pesos</p>
-        <br>
-        <p>El curso inicia el dia 01/11/2021</p>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-    <div class="camposdiv">
-        <div class="camposizquierda">
-        <section>
-            <form action="#" method="POST">
-                <article>
-                    <label for="nombre">Nombre</label>
-                    <input id="nombre" type="text" name="nombre" size="80%">
-                </article>
+        <div class="contacto">
+
+            <div class="contactoizquierda">
                 <br>
                 <br>
-                <article>
-                    <label for="telefono">Telefono</label>
-                    <input id="telefono" type="number" name="telefono" size="80%">
-                </article>
+                <h3>INSCRIPCION</h3>
                 <br>
-                <br>
-                <article>
-                    <label for="provincia">Provincia</label>
-                    <input id="provincia" type="text" name="provincia" size="80%">
-                </article>
-                <br>
-                <br>
-            </form>
-        </section>
-        </div>
-         <div class="camposderecha"> 
-        <section>
-            <form action="#" method="POST">
-               <article>
-                    <label for="apellido">Apellido</label>
-                    <input id="apellido" type="text" name="apellido" size="80%">
-                </article>
-                <br>
-                <br>
-                <article>
-                    <label for="email">Email</label>
-                    <input id="email" type="email" name="telefono" required size="80%">
-                </article>
-                <br>
-                <br>
-                <article>
-                    <label for="ciudad">Ciudad</label>
-                    <input id="ciudad" type="text" name="ciudad" size="80%">
-                </article>
-                <br>
-                <br>
-                <button type="submit">INSCRIBIRTE</button>
-            </form>
-        </section>
-        </div>
-    </div>
+                <section>
+                    <form action="#" class="ins"  method="POST" name="form" onsubmit="return validar();">
+                       <div>
+                        <article>
+                            <label for="nombre"></label>
+                            <input id="nombre" name="nombre" type="text"
+                                placeholder="Nombre" size="70%">
+                        </article>
+                        <br>
+                        <article>
+                            <label for="telefono"></label>
+                            <input id="telefono" type="text" name="telefono" placeholder="Telefono">
+                        </article>
+                        <br>
+                        <article>
+
+                            <label for="prov"></label>
+                            <input id="prov" name="prov" type="text"
+                                placeholder="Provincia" size="70%">
+                        </article>
+                    </div>
+                    <div>
+                        <label for="apellido"></label>
+                        <input id="apellido" name="nombre-apellido" type="text"
+                            placeholder="Apellido" size="70%">
+                    </article>
+                    <br>
+                  
+                        <article>
+                            <label for="correo"></label>
+                            <input id="correo" type="email" name="correo" placeholder="Email"  size="70%">
+                        </article>
+                        <br>
+                        <label for="city"></label>
+                        <input id="city" name="city" type="text"
+                            placeholder="Ciudad" size="70%">
+                    </article>
+                    <br>
+                    <input  type="submit" value="Enviar" class="botones">
+                    </form>
+               
+            </div>
+                <div id="mensaje" class="error"></div>
+                            <br>
+                        </article>
+            <p class="campos-obligatorios">* campos obligatorios</p>
+                </section>
+            </div>
     </main>
     <footer >
         <article>
-            <h4 class="titulo-inferior">Participante</h4>
+            <h4 class="titulo-inferior">Participantes</h4>
             <ul class="participantes">
-                <li>primero</li>
-                <li>segundo</li>
-                <li>tercero</li>
-                <li>cuarto</li>
+                <li>Gamarra Nahuel - 33.708.926</li>
+                <li>Dubini Lucas - 37.376.784</li>
+                <li>Gomez Christian - 38.125.166</li>
+                <li>Lopez Genesis - 39.214.204</li>
 
             </ul>
         </article>
         <article>
             <h4 class="titulo-inferior">Menu inferior</h4>
             <ul class="menu-inferior">
-                <li><a href="index.html" target="_blank">Home</a></li>
-                <li><a href="contacto.html" target="_blank">Contacto</a></li>
-                <li><a href="calendario.html" target="_blank">Caendario</a></li>
                 <li><a href="sedes.html" target="_blank">Sedes</a></li>
                 <li><a href="inscripciom.html" target="_blank">Incripcion</a></li>
+                <li><a href="calendario.html" target="_blank">Caendario</a></li>
+                <li><a href="contacto.html" target="_blank">Contacto</a></li>
             
             </ul>
         </article>
@@ -139,5 +128,8 @@
         </div>
         </article>
     </footer>
+    <script src="js/validar-ins.js"></script>
+    <script src="js/funciones.js"></script>
+    <script src="js/funcionscroll.js"></script>
 </body>
 </html>

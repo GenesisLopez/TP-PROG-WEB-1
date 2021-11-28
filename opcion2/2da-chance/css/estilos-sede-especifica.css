@@ -25,11 +25,10 @@ body{
 }
 h1{
     text-align: center;
-   
 }
 
 header{
-    background-color: rgb(204, 125, 129);
+    background-color: rgb(235, 119, 119);
     padding-top: 5px;
     backdrop-filter: 60%;
     
@@ -45,21 +44,26 @@ footer{
     Justify-content: space-around;
     padding: 5px;
     box-sizing: border-box;
-    margin: 0;
+    margin: 0 auto;
     width: 100%;
-   background-color: rgba(153, 80, 80, 0.884)
+   background-color: rgb(235, 119, 119);
 }
- 
+.titulo{
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    padding-left: 10%;
+    padding-top: 9px;
+}
 .principal{
     display: flex;
-    Justify-content: flex-end;
     padding-top: 5px;
-   
-   
+    margin: 0 auto;
+    width: 100%;
+    
 }
 .principal h1{
-    position: relative;
-    margin-right: 35%;
+    color: white;
 }
 .principal a{
     display: inline-block;
@@ -93,52 +97,58 @@ footer{
 }
 nav{
     text-align: center;
-   background-color:  #fff;       
-  
-}
-nav article{
-        text-align: center;
-        background:linear-gradient(45deg, #fff,rgb(235, 119, 119));
-        width: 100%;/*responde a las columnas*/
-        box-sizing: border-box;/*esta propiedad hace que el padding no ensanche los anchos*/
-       
+   background-color:  rgb(235, 119, 119);       
 }
 .contenedor{
-    display: flex;
     width: 100%;
-    flex-direction: column ;
-    Justify-content: flex-end;
 }
-.item1{
-    display: flex;
-    flex-direction: row ;
-    width: 10%;
-    Justify-content: flex-end;
-    position: relative;
-    left: 60%;
-    
+.item2{
+    border-top: 2px solid rgb(220,100, 100);
+    width: 100%;
 }
-.item1 li{
-    
-    width: 400px;
-    list-style: none;
-
-}
-.item1 li img{
+.item2 ul{
+    list-style-type: none;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: rgb(235, 119, 119);
+    width: 100%;
+  }
+  
+  .item2 li {
+    display: inline-block;
+  }
+  
+  .item2 li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .item1 ul li img{
     width: 100%;
     padding: 5px;
     margin: 5px;
 
 }
+  .item2 li a:hover {
+    background-color: rgb(250, 134, 134);
+  }
+.item1 ul {
+    display: flex;
+    flex-direction: row ;
+    width: 40%;
+    list-style-type: none;
+    margin: 0 auto;
+}
+.item1 ul li{
+    list-style: none;
+}
 .banderas{
     margin-right: 30px;
     text-decoration: none;
 }
-.item1 li a{
-    margin-right: 20px;
-    text-decoration: none;
 
-}
 .titulo-inferior{
     color: floralwhite;
     padding: 10px;
