@@ -43,6 +43,11 @@
         </nav>
     </header>
     <main>
+<<<<<<< HEAD
+        <div class="contacto">
+
+            <div class="contactoizquierda">
+=======
         <br>
         <br>
         <h3 class="center">INSCRIPCION</h3>
@@ -98,18 +103,59 @@
                     <input id="email" type="email" name="telefono" required size="80%">
                 </article>
                 <br>
-                <br>
-                <article>
-                    <label for="ciudad">Ciudad</label>
-                    <input id="ciudad" type="text" name="ciudad" size="80%">
-                </article>
+>>>>>>> 927b87513edb45b7f3a05a8adcfd3f2f60379e9b
                 <br>
                 <br>
-                <button type="submit">INSCRIBIRTE</button>
-            </form>
-        </section>
-        </div>
-    </div>
+                <h3>INSCRIPCION</h3>
+                <br>
+                <section>
+                    <form action="#" class="ins"  method="POST" name="form" onsubmit="return validar();">
+                       <div>
+                        <article>
+                            <label for="nombre"></label>
+                            <input id="nombre" name="nombre" type="text"
+                                placeholder="Nombre" size="70%">
+                        </article>
+                        <br>
+                        <article>
+                            <label for="telefono"></label>
+                            <input id="telefono" type="text" name="telefono" placeholder="Telefono">
+                        </article>
+                        <br>
+                        <article>
+
+                            <label for="prov"></label>
+                            <input id="prov" name="prov" type="text"
+                                placeholder="Provincia" size="70%">
+                        </article>
+                    </div>
+                    <div>
+                        <label for="apellido"></label>
+                        <input id="apellido" name="nombre-apellido" type="text"
+                            placeholder="Apellido" size="70%">
+                    </article>
+                    <br>
+                  
+                        <article>
+                            <label for="correo"></label>
+                            <input id="correo" type="email" name="correo" placeholder="Email"  size="70%">
+                        </article>
+                        <br>
+                        <label for="city"></label>
+                        <input id="city" name="city" type="text"
+                            placeholder="Ciudad" size="70%">
+                    </article>
+                    <br>
+                    <input  type="submit" value="Enviar" class="botones">
+                    </form>
+               
+            </div>
+                <div id="mensaje" class="error"></div>
+                            <br>
+                        </article>
+            <p class="campos-obligatorios">* campos obligatorios</p>
+                </section>
+            </div>
     </main>
     <footer >
         <article>
@@ -140,5 +186,8 @@
         </div>
         </article>
     </footer>
+    <script src="js/validar-ins.js"></script>
+    <script src="js/funciones.js"></script>
+    <script src="js/funcionscroll.js"></script>
 </body>
 </html>

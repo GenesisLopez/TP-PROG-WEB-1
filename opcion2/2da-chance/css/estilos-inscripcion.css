@@ -38,7 +38,9 @@ main{
 
     background-color: rgb(240, 245, 241);
     width: 100%;
+
    
+
 }
 footer{
     display: flex;
@@ -158,6 +160,10 @@ nav{
     
 }
 
+h3{
+    margin: 2em;
+}
+
 .banderas{
     margin-right: 30px;
     text-decoration: none;
@@ -242,3 +248,12 @@ input[type=text] {
     border-bottom: 2px solid black;
    
   }
+  .ins{
+      display: flex;
+
+  }
+  .ins div{
+    margin: 2em;
+
+
+    }
