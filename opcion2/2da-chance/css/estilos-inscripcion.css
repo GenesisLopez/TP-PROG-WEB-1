@@ -257,3 +257,15 @@ input[type=text] {
 
 
     }
+	
+	#datoslocalstorage{
+		display:block;
+		text-align:left;
+		background-color:white;
+		
+	}
+	#datoslocal{
+		
+		text-align:center;
+		width:50%;
+	}
