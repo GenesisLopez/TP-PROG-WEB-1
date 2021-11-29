@@ -177,7 +177,7 @@ nav{
  } 
  .redes-inferior{
      display: flex;
-     flex-direction: row;/*si los hijos se muestran en filas o en columnas*/
+     flex-direction: row;
      
  }
 
@@ -282,9 +282,18 @@ input[type=number] {
         body{
         font-size: 70%;
         }
-        .principal h1{
-            color: rgb(50, 189, 22);
-        }
+       
+       .item1 ul li{
+           width: 90%;
+       }
+       .item2 ul{
+        display: block;
+        margin: 0 auto;
+        overflow: hidden;
+        background-color: rgb(235, 119, 119);
+        width: 100%;
+      }
+       
         a.menu-hamburguesa{
             display: block;
             width: 4em;
@@ -297,10 +306,10 @@ input[type=number] {
         .item2{
             border-top: 2px solid rgb(220,100, 100);
             width: 100%;
-            display: none;
+          display: none;
         }
         .item2 ul{
-            list-style-type: none;
+           
             margin: 0 auto;
             overflow: hidden;
             background-color: rgb(235, 119, 119);

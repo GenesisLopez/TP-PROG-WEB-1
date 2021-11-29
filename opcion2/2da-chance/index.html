@@ -9,11 +9,14 @@
     <link rel="stylesheet" href="css/estilos.css">
 
     <link rel="stylesheet" href="css/estilos-home.css">
+    <link rel="stylesheet" type="text/css" href="css/css-lib/slick.css"/>
+    <link rel="stylesheet" href="css/css-lib/slick-theme.css">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="js/home.js">
+        <script src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/js-lib/slick.min.js"></script>
+    <script src="js/home.js"></script>
 </head>
 
 <body>
@@ -28,7 +31,7 @@
                 <a href="https://www.instagram.com/accounts/login/">
                     <i class="fab fa-instagram-square" id="insta"></i>
                 </a>
-                <href="https:https: //twitter.com/?lang=es">
+                <href="https:https://twitter.com/?lang=es">
                     <i class="fab fa-twitter-square" id="twiter"></i>
                     </a>
 
@@ -64,8 +67,16 @@
     </header>
     <main>
         <section class="carrusel">
-
-
+            <article class="slider">
+                <img src="img/CentroCulturalRecoleta-2.jpg" alt="carrusel">
+                <img src="img/ramosmejia2.jpg" alt="carrusel">
+                <img src="img/san justo2.jpg" alt="carrusel">
+              
+            </article>
+             
+             
+             
+             
         </section>
         <div class="baner-cursos">
             <h2>Cursos</h2>
@@ -148,25 +159,29 @@
         <br>
         <br>
         <div class="mini-inscripcion">
-            <form action="#" method="GET" class="mini-inscripcion"> <label for="establecimiento">
+            <form action="#" method="GET" class="mini-inscripcion">
+                <label for="provincia">
                     <select name="provincia" id="provincia">
-                        <option>PROVINCIA</option>
-                        <option value="valor1">CABA</option>
-                        <option value="valor2">ZONA OESTE</option>
+                        <option value="0" selected>PROVINCIA</option>
+                        <option value="1">CABA</option>
+                        <option value="2">ZONA OESTE</option>
 
                     </select></label>
                 <label for="establecimiento">
                     <select name="establecimiento" id="establecimiento">
-                        <option>ESTABLECIMIENTO</option>
-                        <option value="valor1">Belgrano</option>
-                        <option value="valor2">San justo</option>
-                        <option value="valor3">Ramos Mejia</option>
-                        <option value="valor4">Caballito</option>
+                        <option value="0" selected>ESTABLECIMIENTO</option>
+                        <option value="1" class="caba">Belgrano</option>
+                        <option value="2" class="oeste">San justo</option>
+                        <option value="3" class="oeste">Ramos Mejia</option>
+                        <option value="4" class="caba">Caballito</option>
+
+
+
                     </select></label>
 
                 <label for="idioma"></label>
                 <select name="idioma" id="idioma">
-                    <option>IDIOMA</option>
+                    <option value="0" selected>IDIOMA</option>
                     <option value="valor1">Ingles</option>
                     <option value="valor2">Aleman</option>
                     <option value="valor3">portugues</option>
@@ -176,7 +191,7 @@
                 <label for="precio"></label>
 
                 <label for="horario">
-                    <select name="establecimiento" id="horario">
+                    <select name="horario" id="horario">
                         <option>Horario</option>
                         <option value="valor1">10:00AM</option>
                         <option value="valor2">11:00AM</option>
@@ -188,12 +203,54 @@
                         <option value="valor8">18:00AM</option>
 
                     </select></label>
+                <article id="caballito-info">
 
-                <label for="establecimiento">
+                    <h3 class="nombres-sedes">Caballito
+                        <ul class="info-sedes">
+                            <li>Direccion: Cerrito 2515</li>
+                            <li>Idiomas que se dictan: Inglés-Francés-Alemán-Ruso</li>
+                            <li>Modalidad: Presencial - A distancia</li>
+                            <li><a class="masinfo-boton" href="sede-caballito.html" target="_blank">Mas info</a></li>
+                        </ul>
+                    </h3>
+                </article>
+                <article id="ramos-info">
+
+                    <h3 class="nombres-sedes">Ramos mejía
+                        <ul class="info-sedes">
+                            <li>Direccion: Av. de Mayo 515</li>
+                            <li>Idiomas que se dictan: Inglés-Portugués-Francés-Alemán</li>
+                            <li>Modalidad: Presencial - A distancia</li>
+                            <li><a class="masinfo-boton" href="sede-ramos.html" target="_blank">Mas info</a></li>
+                        </ul>
+                    </h3>
+                </article>
+                <article id="sanjusto-info">
+
+                    <h3 class="nombres-sedes">San justo
+                        <ul class="info-sedes">
+                            <li>Direccion: Arieta 2544</li>
+                            <li>Idiomas que se dictan: Inglés-Portugués-Francés</li>
+                            <li>Modalidad: Presencial</li>
+                            <li><a class="masinfo-boton" href="sede-sanjusto.html" target="_blank">Mas info</a></li>
+                        </ul>
+                    </h3>
+                </article>
+                <article id="belgrano-info">
+
+                    <h3 class="nombres-sedes">Belgrano
+                        <ul class="info-sedes">
+                            <li>Direccion: Av. Corrientes 4547</li>
+                            <li>Idiomas que se dictan: Inglés-Portugués-Francés-Coreano-Ruso-Alemán</li>
+                            <li>Modalidad: Presencial</li>
+                            <li><a class="masinfo-boton" href="sede-belgrano.html" target="_blank">Mas info</a></li>
+                        </ul>
+                    </h3>
+                </article>
 
 
-                    <input id="precio" type="text" name="precio">
-                    <button type="submit"><a href="inscripciom.html">INSCRIBIRTE</a></button>
+                <input id="precio" type="text" name="precio">
+                <button type="submit" id="mandarAInscripcion"><a href="inscripciom.html">INSCRIBIRTE</a></button>
 
             </form>
         </div>

@@ -1,12 +1,20 @@
 var regexEmail=/^[0-9a-zA-Z._.-]+\@[0-9a-zA-Z._.-]+\.[0-9a-zA-Z]+$/
 var regexCampoTelefono=/^[0-9]{4}-?[0-9]{4}$/
 var regexDni=/^[0-9]{7,8}$/
-
+let establecimientoinscripcion=localStorage.getItem("establecimiento");
+let provinciainscripcion=localStorage.getItem("provincia");
+let idiomainscripcion=localStorage.getItem("idioma");
+let horarioinscripcion=localStorage.getItem("horario");
+let horariostr=String(horarioinscripcion);
+document.getElementById("establecimientovalor").value = establecimientoinscripcion;
+document.getElementById("provinciavalor").value=provinciainscripcion;
+document.getElementById("idiomavalor").value=idiomainscripcion;
+document.getElementById("horariovalor").value=horariostr;
 // Contacto
-
 function validar(){
     var error=false;
     var mensajesError="";
+	
    
     if(document.getElementById("nombre").value==''){
         error=true;
